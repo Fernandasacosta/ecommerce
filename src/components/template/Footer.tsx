@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-      <footer className="flex flex-col bg-black/30 text-zinc-400 mt-10">
+      <footer className="flex flex-col bg-[#1E6E57] text-slate-100 mt-10">
           <div className="h-px bg-gradient-to-r from-violet-600/20 via-violet-600/80 to-violet-600/20"></div>
           <div className="container flex flex-col py-10 gap-10">
               <div className="flex flex-col md:flex-row items-center md:items-start justify-between text-center md:text-left gap-5 md:gap-0">
@@ -36,7 +36,7 @@ export default function Footer() {
                       <IconBrandFacebook size={28} stroke={1} />
                       <IconBrandLinkedin size={28} stroke={1} />
                   </div>
-                  <div className="flex flex-col md:flex-row items-center gap-1.5 text-sm text-zinc-500">
+                  <div className="flex flex-col md:flex-row items-center gap-1.5 text-sm">
                       <div className="flex gap-1.5">
                           <span>Feito com</span>
                           <span>❤️</span>
