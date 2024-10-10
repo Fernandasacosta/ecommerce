@@ -1,5 +1,5 @@
-import Carrinho from "./Carrinho";
-import ItemCarrinho from "./ItemCarrinho";
+import Carrinho from './Carrinho'
+import ItemCarrinho from './ItemCarrinho'
 
 export type { ItemCarrinho }
-export default Carrinho
+export { Carrinho }
