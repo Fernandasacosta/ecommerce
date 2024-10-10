@@ -1,9 +1,12 @@
 
+import AvaliacaoEspecializada from '@/components/produto/AvaliacaoEspecializada'
+import AvaliacoesUsuarios from '@/components/produto/AvaliacoesUsuarios'
 import BannerCompra from '@/components/produto/BannerCompra'
 import InformacoesProduto from '@/components/produto/InformacoesProduto'
+import MedidorDePreco from '@/components/produto/MedidorDePreco'
 import ProdutoNaoEncontrado from '@/components/produto/ProdutoNaoEncontado'
 import TituloProduto from '@/components/produto/TituloProduto'
-import { produtos } from '@/core'
+import { produtos } from '@gstore/core'
 
 export default function PaginaProduto(props: any) {
     const id = +props.params.id
@@ -15,7 +18,10 @@ export default function PaginaProduto(props: any) {
                 <TituloProduto produto={produto} />
                 <InformacoesProduto produto={produto} />
                 <BannerCompra produto={produto} />
+                <MedidorDePreco produto={produto}/>
             </div>
+            <AvaliacoesUsuarios produto={produto}/>
+            <AvaliacaoEspecializada produto={produto}/>
         </div>
     ) : (
         <ProdutoNaoEncontrado />

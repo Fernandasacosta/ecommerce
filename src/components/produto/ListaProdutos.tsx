@@ -1,12 +1,11 @@
 'use client'
-import { produtos } from '@/core'
-// import useProdutos from '@/data/hooks/useProdutos'
+import useProdutos from '@/data/hooks/useProdutos'
 import ProdutoItem from './ProdutoItem'
 import ProdutoNaoEncontrado from './ProdutoNaoEncontado'
 
 
 export default function ListaProdutos() {
-    // const { produtos } = useProdutos()
+    const { produtos } = useProdutos()
     return produtos.length ? (
         <div
             className="

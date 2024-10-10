@@ -1,10 +1,11 @@
+'use client'
+
 import IconeCarrinho from '../shared/IconeCarrinho'
 import Link from 'next/link'
-// import useCarrinho from '@/data/hooks/useCarrinho'
+ import useCarrinho from '@/data/hooks/useCarrinho'
 
 export default function Header() {
-    const qtdeItens = 0
-    // const { qtdeItens } = useCarrinho()
+     const { qtdeItens } = useCarrinho()
     return (
         <div
             className="flex flex-col h-20 bg-[#1E6E57] text-slate-100"
